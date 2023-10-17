@@ -1,0 +1,303 @@
+/* Reset CSS /
+/ Box sizing rules */
+*,
+*::before,
+::after {
+    box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+    margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons /
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/ Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    
+    *{
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;}
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;/*1 REM = 10PX*/
+    margin: 0;
+ }
+
+ body{
+    font-family:'Times New Roman', Times, serif ;
+    font-size: 1.6rem;
+    line-height: 2;
+ }
+ a{
+    text-decoration: none;
+ }
+
+ span{
+    font-weight: bold;
+ }
+
+ h1, h2{
+    color: red;
+ }
+
+ p{
+    font-size: 2rem;
+ }
+ 
+ .contenedor-navegacion{
+    display: flex;
+    background-color: rgb(250, 72, 72);
+    width: 151.9rem;
+    height: 10rem;
+    position: relative;
+ }
+
+ .contenedor-navegacion img{
+    width: 25rem;
+    height: 10rem;
+ }
+
+ .nav-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    margin-left: 10rem;
+}
+
+.nav-principal a {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    margin: 0 3rem; /* Añade espacio horizontal entre los enlaces */
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+ .contenedor-navegacion{
+    position: absolute;
+ }
+.foto-portada{
+    width: 100%;
+    height: 100%;
+}
+
+.foto-portada img{
+    width: 160rem;
+}
+
+.foto-portada p{
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    color: red;
+    font-size: 10rem;
+}
+
+.titulo{
+    color: red;
+    text-align: center;
+}
+
+.titulo h1{
+    margin: 2rem 0 0 0;
+    text-transform: uppercase;
+}
+
+/* Añade estas reglas CSS para centrar la imagen */
+.foto-logo {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    /*height: 100vh; /* Ajusta la altura al 100% de la ventana */
+}
+
+.foto-logo img {
+    max-height: 100%; /* Ajusta la altura máxima al 100% del contenedor */
+    max-width: 100%; /* Ajusta el ancho máximo al 100% del contenedor */
+    height: 25rem;
+    width: 20rem;
+}
+
+.informacion {
+    border-top: solid grey;
+    margin: 5rem 0 0 0;
+    
+}
+
+.info-variado{
+    margin: 2rem 0 0 2rem;
+    display: flex;
+    justify-content: space-between; /* Coloca los elementos al extremo izquierdo y derecho */
+}
+
+.info-ayuda img {
+    max-width: 100%; /* Ajusta el ancho de la imagen para que se ajuste al contenedor */
+}
+
+.info-texto {
+    flex: 1; /* Hace que este div ocupe el espacio restante */
+    padding: 0 20px; /* Agrega espacio alrededor del texto (ajusta según tus preferencias) */
+}
+
+/**LINEA AYUDA**/
+
+.linea-ayuda{
+    margin: 5rem 0 0 5rem;
+}
+.linea-ayuda h1{
+    text-transform: uppercase;
+}
+
+.objetivos{
+    margin: 5rem 0 0 5rem;
+}
+
+.objetivos li{
+    font-size: 2rem;
+}
+
+.dirige{
+    margin: 5rem 0 0 5rem;
+}
+
+.caracteristicas{
+    margin: 5rem 0 0 5rem;
+}
+
+.caracteristicas li{
+    font-size: 2rem;
+}
+
+.modalidades{
+    margin: 5rem 0 0 5rem;
+}
+
+.modalidades li{
+    font-size: 2rem;
+}
+
+.img-separadas{
+    display: flex;
+    justify-content:left;
+    margin: 2rem 0 0 0;
+}
+
+.foto1{
+    margin:0 3rem 0 0;
+    height: 35rem;
+    width: 45rem;
+}
+
+.foto2{
+    height: 35rem;
+    width: 45rem;
+}
+
+.info{
+    margin: 5rem 0 0 5rem;
+}
+
+.boton-subida a{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 68rem 3rem 65rem;
+    text-transform: uppercase;
+    border: 2px solid;
+}
+
+
+  
+footer {
+    color: black;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(250, 72, 72);
+    margin-top: 3rem;
+  }
+
+   
+  .footer-section {
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+  }
+
+ 
+  .footer-section h3 {
+    padding: 5px;
+    font-size: 18px;
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+    text-transform: uppercase;
+  }
+
+  .footer-section p {
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+  }
+
